@@ -83,9 +83,75 @@ nav img{
     background: rgb(0, 255, 255);
     transition: 1s;
 }
+.fafa-bars{
+    display: none;
+}
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
     }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: powderblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .fafa-bars{
+        display: block;
+        color: #0059ff;
+        margin: 10px;
+        font-size: 22px0;
+    }
 
+}
+.courses{
+    margin: auto;
+    width: 80%;
+    padding-top: 100px;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+p{
+    color: #3b3d3d;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 10px;
+    line-height: 20px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-column{
+    flex-basis: 30%;
+    background: rgb(168, 212, 247);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+h3{
+    font-weight: 600;
+    text-align: center;
+    margin: 12px 0;
+}
+.course-column:hover{
+    box-shadow: 0 0 20px 0 #ee7ecc;
+}
+@media(max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
 }
